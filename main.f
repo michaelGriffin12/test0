@@ -1,0 +1,25 @@
+C     SIMPLE CALCULATOR
+ 10   FORMAT(I10)
+      READ(5,10) IVAR
+      GO TO (100, 200, 300, 400) IVAR
+ 100  READ(5,10) IV1
+      READ(5,10) IV2
+      IV3 = IV1 + IV2
+      WRITE(6,10) IV3
+      GOTO 500
+ 200  READ(5,10) IV1
+      READ(5,10) IV2
+      IV3 = IV1 - IV2
+      WRITE(6,10) IV3
+      GOTO 500
+ 300  READ(5,10) IV1
+      READ(5,10) IV2
+      IV3 = IV1 * IV2
+      WRITE(6,10) IV3
+      GOTO 500
+ 400  READ(5,10) IV1
+      READ(5,10) IV2
+      IV3 = IV1 / IV2
+      WRITE(6,10) IV3
+ 500  STOP
+      END

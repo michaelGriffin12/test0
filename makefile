@@ -1,0 +1,2 @@
+MAIN:
+	gfortran ./main.f
